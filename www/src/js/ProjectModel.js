@@ -138,7 +138,7 @@ export class ProjectModel {
 			});
 	}
 
-	pubUnloadMessage(e) {
+	pubUnloadMessage(e) {		
 		//если данные не сохранены, то показываем уведомление
 		if (!this.contentSaved) {
 			e.returnValue = 'message';
@@ -190,6 +190,7 @@ export class ProjectModel {
 		let currentDate = Date.now();
 		//и опубликуем её для последующей навигации в роутинге
 		this.changes.pub('createNewProject', currentDate);
+		
 	}
 
 	resizeContent(heights, width) {

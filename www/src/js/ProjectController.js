@@ -38,7 +38,7 @@ export class ProjectController {
 			);
 
 		//следим за уходом со страницы
-		window.onbeforeunload = this.startUnload.bind(this);
+		window.onbeforeunload = this.startUnload.bind(this);		
 
 		this.startLoading();
 		this.startResizeContent();
@@ -59,7 +59,7 @@ export class ProjectController {
 	}
 
 	startUnload(event) {
-		this.myModel.pubUnloadMessage(event);
+		this.myModel.pubUnloadMessage(event);		
 	}
 
 	startResizeContent() {
@@ -85,5 +85,5 @@ export class ProjectController {
 		this.myModel.changeButtonContainer(width);
 	}
 
-
 }
+
