@@ -103,7 +103,8 @@
 	color:  #76dae8;
 	font-size: 0.9em;
 	border: transparent;
-	max-width: 200px;	
+	max-width: 200px;
+	display: none;
 }
 .header__dashboard-link {
 	display: none;
