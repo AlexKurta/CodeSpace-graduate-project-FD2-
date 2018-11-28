@@ -62,7 +62,7 @@ export class PromoView {
 			.css('background-image', `url(${this.myModel.layoutLink})`);
 
 		//скрываем имя пользователя и название проекта
-		$('.header__title, .header__title__username, .header__title__projectname')
+		$('.header__title, .header__title__username, .header__title__projectname, .header__title__input')
 			.css('display', 'none');
 	}
 
