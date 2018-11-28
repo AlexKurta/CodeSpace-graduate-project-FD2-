@@ -87,7 +87,7 @@ export class DashboardView {
 			.text(this.myModel.user);
 		$('.header__title, .header__title__username')
 			.css('display', 'inline-block');
-		$('.header__title__projectname')
+		$('.header__title__projectname, .header__title__input')
 			.css('display', 'none');
 	}
 

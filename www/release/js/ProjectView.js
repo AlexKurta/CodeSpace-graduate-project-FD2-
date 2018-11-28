@@ -60,6 +60,8 @@ export class ProjectView {
 			.css('display', 'inline-block');
 		$('.header__title__username')
 			.text(`${this.myModel.user} / `);
+		$('.header__title__input')
+			.css('display', 'none');
 
 		//устанавливаем чекбокс исходя из настроек и отображаем положение
 		$('#AUTO-UPDATE')
